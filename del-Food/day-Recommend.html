@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Delicious-Foods</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <link rel="alternate icon" type="image/png" href="assets/i/favicon.png">
+  <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
+  
+  
+  <style>
+    @media only screen and (min-width: 1200px) {
+      .blog-g-fixed {
+        max-width: 1200px;
+      }
+    }
+
+    @media only screen and (min-width: 641px) {
+      .blog-sidebar {
+        font-size: 1.4rem;
+      }
+    }
+
+    .blog-main {
+      padding: 20px 0;
+    }
+
+    .blog-title {
+      margin: 10px 0 20px 0;
+    }
+
+    .blog-meta {
+      font-size: 14px;
+      margin: 10px 0 20px 0;
+      color: #222;
+    }
+
+    .blog-meta a {
+      color: #27ae60;
+    }
+
+    .blog-pagination a {
+      font-size: 1.4rem;
+    }
+
+    .blog-team li {
+      padding: 4px;
+    }
+
+    .blog-team img {
+      margin-bottom: 0;
+    }
+
+    .blog-content img,
+    .blog-team img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .blog-footer {
+      padding: 10px 0;
+      text-align: center;
+    }
+     #blank{
+      margin-left: 10%;
+    }
+
+  </style>
+  <style>
+    @media only screen and (min-width: 641px) {
+      .am-offcanvas {
+        display: block;
+        position: static;
+        background: none;
+      }
+
+      .am-offcanvas-bar {
+        position: static;
+        width: auto;
+        background: none;
+        -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+      .am-offcanvas-bar:after {
+        content: none;
+      }
+
+    }
+
+    @media only screen and (max-width: 640px) {
+      .am-offcanvas-bar .am-nav>li>a {
+        color:#ccc;
+        border-radius: 0;
+        border-top: 1px solid rgba(0,0,0,.3);
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.05)
+      }
+
+      .am-offcanvas-bar .am-nav>li>a:hover {
+        background: #404040;
+        color: #fff
+      }
+
+      .am-offcanvas-bar .am-nav>li.am-nav-header {
+        color: #777;
+        background: #404040;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.05);
+        text-shadow: 0 1px 0 rgba(0,0,0,.5);
+        border-top: 1px solid rgba(0,0,0,.3);
+        font-weight: 400;
+        font-size: 75%
+      }
+
+      .am-offcanvas-bar .am-nav>li.am-active>a {
+        background: #1a1a1a;
+        color: #fff;
+        box-shadow: inset 0 1px 3px rgba(0,0,0,.3)
+      }
+
+      .am-offcanvas-bar .am-nav>li+li {
+        margin-top: 0;
+      }
+    }
+
+    .my-head {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .my-button {
+      position: fixed;
+      top: 0;
+      right: 0;
+      border-radius: 0;
+    }
+    .my-sidebar {
+      padding-right: 0;
+      border-right: 1px solid #eeeeee;
+    }
+
+    .my-footer {
+      border-top: 1px solid #eeeeee;
+      padding: 10px 0;
+      margin-top: 10px;
+      text-align: center;
+    }
+    #blank{
+      margin-left: 11%;
+    }
+  </style>
+</head>
+<body>
+  <!-- 题头 -->
+<header class="am-topbar">
+    <h1 class="am-topbar-brand">
+      <a href="index.html">Delicious-Foods</a>
+    </h1>
+    
+    <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+      <ul class="am-nav am-nav-pills am-topbar-nav " id="blank">
+      
+        <li><a href="index.html ">美食首页</a></li>
+        <li><a href="many-Foods.html">每日推荐</a></li>
+        <li class="am-active"><a href="day-Recommend.html">季节菜品</a></li>
+        <li><a href="commentZone.html">社区评论</a></li>
+        <li><a href="many-Foods.html">健康新闻</a></li>
+        
+      </ul>
+        </li>
+      </ul>
+
+      <form class="am-topbar-form am-topbar-left am-form-inline am-topbar-right" role="search">
+        <div class="am-form-group">
+          <input type="text" class="am-form-field am-input-sm" placeholder="搜索文章">
+        </div>
+        <button type="submit" class="am-btn am-btn-default am-btn-sm">搜索</button>
+      </form>
+
+    </div>
+</header>
+
+<div class="am-g am-g-fixed blog-g-fixed">
+ <div class="am-u-md-8">
+   <h1 title="什锦水果优格沙拉">什锦水果优格沙拉</h1>
+   <p>
+     今天下班早，正好把前几日看球时的美食整理一下，先拿出一两个晒一晒，和朋友们共享！
+        前几天看世界杯买了很多水果，熬夜看球最容易上火，因此，多吃些水果会对身体大有裨益。不要总吃肉和干果类的食物，不信您就试一试，几天下来会感觉一切都不舒服了，呵呵，尤其代谢系统会跟您做别扭！
+        今天这款，由于是用几种水果制作的沙拉，里面放的是优格酱，因此，就叫做“什锦水果优格沙拉”。
+   </p>
+   <h2 ><i class="am-icon-modx am-warning am-icon-warning"></i>食材</h2>
+   <hr class="am-article-divider blog-hr">
+   <div class="blog-main">
+     <ul class="">
+      <li><a href="#">青苹果&nbsp;1个</a></li>
+      <li><a href="#">红苹果&nbsp;1个</a></li>
+      <li><a href="#">甜瓜&nbsp;50g</a></li>
+      <li><a href="#">红提&nbsp;60g</a></li>
+      <li><a href="#">香蕉&nbsp;1根</a></li>
+      <li><a href="#">甜橙&nbsp;2个</a></li>
+      <li><a href="#">优格酱&nbsp;50g</a></li>
+      <li><a href="#">砂糖&nbsp;适量</a></li>
+      <li><a href="#">橄榄油&nbsp;适量</a></li>
+      </ul>
+   </div>
+   <h2 ><i class="am-icon-modx am-warning am-icon-warning"></i>方法步骤</h2>
+   <hr class="am-article-divider blog-hr">
+   <div class="blog-main">
+     <article data-am-widget="paragraph"class="am-paragraph am-paragraph-default"data-am-paragraph="{ tableScrollable: true, pureview: true }">
+       <p><span class="am-badge am-badge-success am-round am-text-lg">1</span>&nbsp;&nbsp;&nbsp;青苹果1个、红苹果1个、甜瓜50克、红提60克、香蕉1根、甜橙2个、优格酱50克、柠檬汁少许、砂糖适量、橄榄油适量。</p>
+       <img src="img/1.png" alt="">
+       <p><span class="am-badge am-badge-success am-round am-text-lg">2</span>&nbsp;&nbsp;&nbsp;先把甜瓜。</p>
+       <img src="img/2.png" alt="">
+       <p><span class="am-badge am-badge-success am-round am-text-lg">3</span>&nbsp;&nbsp;&nbsp;红苹果。</p>
+       <img src="img/3.png" alt="">
+       <p><span class="am-badge am-badge-success am-round am-text-lg">4</span>&nbsp;&nbsp;&nbsp;青苹果。</p>
+       <img src="img/4.png" alt="">
+       <p><span class="am-badge am-badge-success am-round am-text-lg">5</span>&nbsp;&nbsp;&nbsp;红提..</p>
+       <img src="img/5.png" alt="">
+       <p><span class="am-badge am-badge-success am-round am-text-lg">6</span>&nbsp;&nbsp;&nbsp;香蕉等切丁。</p>
+       <img src="img/6.png" alt="">
+       <p><span class="am-badge am-badge-success am-round am-text-lg">7</span>&nbsp;&nbsp;&nbsp;放入拌料盆内，滴入少许橄榄油和少许细砂糖拌匀。</p>
+       <img src="img/7.png" alt="">
+       <p><span class="am-badge am-badge-success am-round am-text-lg">8</span>&nbsp;&nbsp;&nbsp;把拌好的什锦水果丁，倒入一只大小合适的碗内。</p>
+       <img src="img/8.png" alt="">
+       <p><span class="am-badge am-badge-success am-round am-text-lg">9</span>&nbsp;&nbsp;&nbsp;然后，扣放到大盘里。</p>
+       <img src="img/9.png" alt="">
+       <p><span class="am-badge am-badge-success am-round am-text-lg">10</span>&nbsp;&nbsp;&nbsp;把甜橙用齿刀破两半，然后再切成3毫米厚的片。</p>
+       <img src="img/10.png" alt="">
+       <p><span class="am-badge am-badge-success am-round am-text-lg">11</span>&nbsp;&nbsp;&nbsp;把甜橙片均匀整齐的摆放到水果丁的周边。</p>
+       <img src="img/11.png" alt="">
+       <p><span class="am-badge am-badge-success am-round am-text-lg">12</span>&nbsp;&nbsp;&nbsp;把优格酱挤到水果丁上，呈网格状。</p>
+       <img src="img/12.png" alt="">
+
+      </article>
+   </div>
+   <h2 ><i class="am-icon-modx am-warning am-icon-warning "></i>注意事项</h2>
+   <hr class="am-article-divider blog-hr">
+   <div class="blog-main">
+     <p><span class="am-badge am-badge-danger am-round am-text-lg">0</span>&nbsp;&nbsp;&nbsp;此沙拉特点：颜色艳丽、材料多样、口感清爽、营养丰富。
+        温馨提示：
+        1、使用的水果要新鲜，并把它消毒洗净，苹果可不去皮，因为果皮的维生素含量较高，去掉太可惜，但，原则是要洗净才可以食用。
+        2、水果可多样，按自己喜欢的水果搭配即可。
+        3、柠檬用鲜的最好，那样味道才更地道，没有用瓶装的也行，我用的就是进口的纯柠檬汁，和鲜柠檬味道一样，就是贵了些！没有也可不放，但，浓郁度稍差。
+      </p>
+   </div>
+
+ </div>
+ <div class="am-u-md-4 blog-sidebar">
+   <img src="img/111.png" alt="">
+   <img src="img/222.png" alt="">
+   <img src="img/333.png" alt="">
+ </div>
+</div>
+ <div data-am-widget="gotop" class="am-gotop am-gotop-default" >
+    <a href="#top" title="回到顶部">
+        <span class="am-gotop-title">回到顶部</span>
+          <i class="am-gotop-icon am-icon-chevron-up"></i>
+    </a>
+  </div>
+<hr class="am-article-divider blog-hr">
+<footer class="blog-footer">
+  <p>This my Graducation design<br/>
+    <small>© Copyright DeliciousFoods by the Xie Yingyong</small>
+  </p>
+</footer>
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="assets/js/amazeui.min.js"></script>
+</body>
+</html>
+
+</body>
+</html>

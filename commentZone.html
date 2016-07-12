@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Delicious-Foods</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <link rel="alternate icon" type="image/png" href="assets/i/favicon.png">
+  <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
+  <link rel="stylesheet" href="css/semantic.css" type="text/css" />
+<link rel="stylesheet" href="css/zyComment.css" type="text/css" />
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="css/froala_editor.min.css" rel="stylesheet" type="text/css">
+<style type="text/css" media="print, screen">  
+  label {
+      font-weight: bold;
+  }
+  
+  a {
+    font-family: Microsoft YaHei;
+  }
+  
+  #articleComment {
+    width: 600px;
+    height: 1500px;
+    overflow: auto;
+  }
+  section {
+            width: 80%;
+            margin: auto;
+            text-align: left;
+        }
+</style> 
+  
+  <style>
+    @media only screen and (min-width: 1200px) {
+      .blog-g-fixed {
+        max-width: 1200px;
+      }
+    }
+
+    @media only screen and (min-width: 641px) {
+      .blog-sidebar {
+        font-size: 1.4rem;
+      }
+    }
+
+    .blog-main {
+      padding: 20px 0;
+    }
+
+    .blog-title {
+      margin: 10px 0 20px 0;
+    }
+
+    .blog-meta {
+      font-size: 14px;
+      margin: 10px 0 20px 0;
+      color: #222;
+    }
+
+    .blog-meta a {
+      color: #27ae60;
+    }
+
+    .blog-pagination a {
+      font-size: 1.4rem;
+    }
+
+    .blog-team li {
+      padding: 4px;
+    }
+
+    .blog-team img {
+      margin-bottom: 0;
+    }
+
+    .blog-content img,
+    .blog-team img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .blog-footer {
+      padding: 10px 0;
+      text-align: center;
+    }
+     #blank{
+      margin-left: 10%;
+    }
+
+  </style>
+  <style>
+    @media only screen and (min-width: 641px) {
+      .am-offcanvas {
+        display: block;
+        position: static;
+        background: none;
+      }
+
+      .am-offcanvas-bar {
+        position: static;
+        width: auto;
+        background: none;
+        -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+      .am-offcanvas-bar:after {
+        content: none;
+      }
+
+    }
+
+    @media only screen and (max-width: 640px) {
+      .am-offcanvas-bar .am-nav>li>a {
+        color:#ccc;
+        border-radius: 0;
+        border-top: 1px solid rgba(0,0,0,.3);
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.05)
+      }
+
+      .am-offcanvas-bar .am-nav>li>a:hover {
+        background: #404040;
+        color: #fff
+      }
+
+      .am-offcanvas-bar .am-nav>li.am-nav-header {
+        color: #777;
+        background: #404040;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.05);
+        text-shadow: 0 1px 0 rgba(0,0,0,.5);
+        border-top: 1px solid rgba(0,0,0,.3);
+        font-weight: 400;
+        font-size: 75%
+      }
+
+      .am-offcanvas-bar .am-nav>li.am-active>a {
+        background: #1a1a1a;
+        color: #fff;
+        box-shadow: inset 0 1px 3px rgba(0,0,0,.3)
+      }
+
+      .am-offcanvas-bar .am-nav>li+li {
+        margin-top: 0;
+      }
+    }
+
+    .my-head {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .my-button {
+      position: fixed;
+      top: 0;
+      right: 0;
+      border-radius: 0;
+    }
+    .my-sidebar {
+      padding-right: 0;
+      border-right: 1px solid #eeeeee;
+    }
+
+    .my-footer {
+      border-top: 1px solid #eeeeee;
+      padding: 10px 0;
+      margin-top: 10px;
+      text-align: center;
+    }
+    #blank{
+      margin-left: 11%;
+    }
+    #myComment{
+      width: 700px;
+      height: 400px;
+    }
+    
+  </style>
+</head>
+<body>
+  <!-- 题头 -->
+<header class="am-topbar">
+    <h1 class="am-topbar-brand">
+      <a href="index.html">Delicious-Foods</a>
+    </h1>
+    
+    <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+      <ul class="am-nav am-nav-pills am-topbar-nav " id="blank">
+      
+        <li><a href="index.html ">美食首页</a></li>
+        <li><a href="many-Foods.html">每日推荐</a></li>
+        <li><a href="day-Recommend.html">季节菜品</a></li>
+        <li class="am-active"><a href="commentZone.html">社区评论</a></li>
+        <li><a href="many-Foods.html">健康新闻</a></li>
+        
+      </ul>
+        </li>
+      </ul>
+
+      <form class="am-topbar-form am-topbar-left am-form-inline am-topbar-right" role="search">
+        <div class="am-form-group">
+          <input type="text" class="am-form-field am-input-sm" placeholder="搜索文章">
+        </div>
+        <button type="submit" class="am-btn am-btn-default am-btn-sm">搜索</button>
+      </form>
+
+    </div>
+</header>
+
+<div class="am-g am-g-fixed blog-g-fixed">
+   <div class="am-u-md-8">
+     <h3 class="am-article-title">
+         <div data-am-widget="titlebar" class="am-titlebar am-titlebar-default" >
+              <h2 class="am-titlebar-title ">
+                热门评论 
+              </h2>
+
+              <nav class="am-titlebar-nav">
+                  <a href="#more" class="">more &raquo;</a>
+              </nav>
+          </div>
+     </h3>
+     <div id="myComment">
+        <section id="editor" >
+          <div id='edit' style="margin-top: 30px;">
+              <img class="fr-fir" src="img/old_clock.jpg" alt="Old Clock" width="300"/>
+          </div>
+        </section>
+     </div>
+     <div id="articleComment"></div>
+  
+     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+     <script type="text/javascript" src="js/zyComment.js"></script>
+  
+     <script type="text/javascript">
+  
+    var agoComment = [
+                      {"id":1,"userName":"游客1","time":"2014-04-04","sortID":0,"content":"第一条评论"},
+                      {"id":2,"userName":"游客2","time":"2014-04-04","sortID":0,"content":"第二条评论"},
+                      {"id":3,"userName":"站长","time":"2014-04-04","sortID":1,"content":"第一条评论的回复"},
+                      {"id":4,"userName":"站长","time":"2014-04-04","sortID":2,"content":"第二条评论的回复"},
+                      {"id":5,"userName":"游客3","time":"2014-04-04","sortID":0,"content":"第三条评论"},
+                      {"id":6,"userName":"游客2","time":"2014-04-04","sortID":4,"content":"第二条评论的回复的回复"},
+                      ];
+    $("#articleComment").zyComment({
+      "width":"355",
+      "height":"33",
+      "agoComment":agoComment,
+      "callback":function(comment){
+        console.info("填写内容返回值：");
+        console.info(comment);
+
+        // 添加新的评论
+        $("#articleComment").zyComment("setCommentAfter",{"id":123, "name":"name", "content":"content", "time":"2014-04-14"});
+
+      }
+    });
+    
+    
+  
+  </script>
+      
+   </div>
+   <div class="am-u-md-4 blog-sidebar">
+     <img src="img/111.png" alt="">
+     <img src="img/222.png" alt="">
+     <img src="img/333.png" alt=""> 
+   </div>
+</div>
+ <div data-am-widget="gotop" class="am-gotop am-gotop-default" >
+    <a href="day-Recommend.htmltop" title="回到顶部">
+        <span class="am-gotop-title">回到顶部</span>
+        <i class="am-gotop-icon am-icon-chevron-up"></i>
+    </a>
+  </div>
+<hr class="am-article-divider blog-hr">
+ 
+  <footer class="blog-footer">
+    <p>This A Graducation design<br/>
+      <small>© Copyright DeliciousFoods by the CarryGuan</small>
+    </p>
+  </footer>
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+
+<script src="assets/js/amazeui.min.js"></script>
+<script src="js/libs/jquery-1.11.1.min.js"></script>
+  <script src="js/froala_editor.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="../js/froala_editor_ie8.min.js"></script>
+  <![endif]-->
+  <script src="js/plugins/tables.min.js"></script>
+  <script src="js/plugins/lists.min.js"></script>
+  <script src="js/plugins/colors.min.js"></script>
+  <script src="js/plugins/media_manager.min.js"></script>
+  <script src="js/plugins/font_family.min.js"></script>
+  <script src="js/plugins/font_size.min.js"></script>
+  <script src="js/plugins/block_styles.min.js"></script>
+  <script src="js/plugins/video.min.js"></script>
+
+  <script>
+      $(function(){
+          $('#edit').editable({inlineMode: false, alwaysBlank: true})
+      });
+  </script>
+</body>
+</html>
+
